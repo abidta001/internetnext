@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo">
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PROJECTS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#web-development">Web Development</a></li>
+            <li><a class="dropdown-item" href="#seo">SEO</a></li>
+            <li><a class="dropdown-item" href="#marketing">Marketing</a></li>
+          </ul>
+        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">SERVICES</a>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+          </ul>
+          <a href="#enquiry" class="btn btn-quick-enquiry">Quick Enquiry</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel Section -->
+  <section id="carousel-section">
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <!-- Carousel Images with Single Line Text -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/hone/WhatsApp Image 2025-01-23 at 11.18.41.jpeg" class="d-block w-100" alt="Image 1">
+          <div class="carousel-caption">
+            <span>Unlock the Potential of your space with Sthayi Architects</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/hone/WhatsApp Image 2025-01-23 kat 11.18.41.jpeg" class="d-block w-100" alt="Image 2">
+          <div class="carousel-caption">
+            <span>Unlock the Potential of your space with Sthayi Architects</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/hone/WhatsApp Image 2025nm-01-23 at 11.18.42.jpeg" class="d-block w-100" alt="Image 3">
+          <div class="carousel-caption">
+            <span>Unlock the Potential of your space with Sthayi Architects</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Left and Right Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="carousel-section">
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Content (same as before) -->
+    </div>
+  </section>
+  
+  <section id="heading-section" class="mt-5 text-center">
+    <h2>PRAGMATIC | PLAYFUL</h2>
+    <div class="underline"></div> <!-- Separate underline -->
+    <p>Unlock the potential of your space with Sthayi Architects, the premier architecture firm for residential and commercial projects. Our<br> focus on sustainability and permanency guarantees a space that endures. With state-of-the-art technology and a commitment to<br> innovation, we are your partner in making your dream design a reality.    </p>
+    <button class="explore-button">Explore More</button>
+  </section>
+  <section id="split-images" class="mt-5">
+    <div class="image-container">
+      <div class="image-item">
+        <img src="img/img12.jpeg" alt="Image 1">
+        <div class="image-text">OUR WORK</div>
+        <p class="image-text-p">Crafting excellence, shaping dreams with precision and passion</p>
+        <button class="image-button">VIEW PROJECTS</button>
+      </div>
+      <div class="image-item">
+        <img src="img/img13.jpeg" alt="Image 2">
+        <div class="image-text">OUR SERVICES</div>
+        <p class="image-text-p">Tailored solutions, Exceptional results, delivered with expertise and commitment</p>
+        <button class="image-button">VIEW SERVICES</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="heading-section" class="mt-5 text-center">
+    <h2>WHY US?</h2>
+    <div class="underline"></div> <!-- Separate underline -->
+  </section>
+
+  <section id="image-gallery" class="mt-5 text-center">
+    <div class="image-container">
+        <div class="image-item">
+            <img src="img/3split/f.jpeg" alt="Image 1">
+            <div class="image-text">
+                <h3>SUSTAINABILITY AND CREATIVITY INTERWINED</h3>
+                <p>Our company infuses each design with innovative sustainable practices and a hint of playfulness.</p>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="img/3split/WhatsApp Image 2025-01-23 at 12.21.15.jpeg" alt="Image 2">
+            <div class="image-text">
+                <h3>CLIENT HAPPINESS<br> COMES FIRST</h3>
+                <p>Collaborating closely with clients, we strive to realize their vision by Integrating sustainable aspects</p>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="img/3split/WhatsApp Image 2025-01-23 at 12.21.16.jpeg" alt="Image 3">
+            <div class="image-text">
+                <h3>PRACTICALLY YET WHIMSICAL DESIGNS</h3>
+                <p>Our team crafts spaces that are both functional and efficient. blending creativity and playfulness seamleassly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ribbon">
+    <div class="ribbon-content">
+      <div class="ribbon-item">
+        <h4>+150</h4>
+        <p>PROJECTS</p>
+      </div>
+      <div class="ribbon-item">
+        <h4>+20</h4>
+        <p>SKILLED WORK FORCE</p>
+      </div>
+      <div class="ribbon-item">
+        <h4>+15</h4>
+        <p>EMPLOYEES</p>
+      </div>
+      <div class="ribbon-item">
+        <h4>+500</h4>
+        <p>SATISFIED CLIENTS</p>
+      </div>
+    </div>
+  </div>
+  <section id="heading-section" class="mt-5 text-center">
+    <h2>OUR PROJECTS</h2>
+    <div class="underline"></div> <!-- Separate underline -->
+  </section>
+  <section class="content-section">
+    <div class="content-container">
+      <div class="left-side">
+        <img src="img/project.jpeg" alt="Image" class="image">
+      </div>
+      <div class="right-side">
+        <h2>MODERN - TRADITIONAL</h2>
+        <p>In crafting this dwelling, we designed a tapestry that considers the harsh sun and heavy rain, depicted by the steeply sloped yet seemingly flat roof. An impressive creation adorned in shades of green, blending with the lush protectors of this land- our respect for nature resonating in every carefully preserved leaf. This masterpiece reveals a spacious area at its entrence, featuring a playful sanctuary for children, overseen by attentive gazes. <br> Here, delight in joyous moments with family, your soul at ease, as you watch the young ones play, Or as dusk casts a golden glow over the land. stroll along the green path, absorbing the fading sunlight.</p>
+        <button class="action-button">EXPLORE</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Side: Logo and Description -->
+      <div class="footer-left">
+        <img src="img/logo.png" alt="Logo" class="footer-logo">
+        <p class="footer-description">Unlock potential of your space with Sthayi Archietects, the premier architecture firm and commercial projects.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      
+      <!-- Center: Social Media Icons and Links -->
+      <div class="footer-center">
+        <!-- Social Media Icons -->
+       
+        
+        <!-- Links -->
+        <div class="footer-links">
+            <div class="stay-connected1">Links</div>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+  
+      <!-- Right Side: Stay Connected with Icons -->
+      <div class="footer-right">
+        <div class="stay-connected">Stay Connected</div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            
+            <span>M6/30- MALAPARAMBA PRASHANTIPURAM-<BR>HOUSINGCOLONY CALICUT 673009 KERALA-<BR>INDIA</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91- 8156973148</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>sthayiarchitects@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

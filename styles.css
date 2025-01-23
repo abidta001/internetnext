@@ -1,0 +1,642 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+}
+
+/* Logo */
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4b400; /* Highlight color */
+}
+
+/* Quick Enquiry Button */
+.btn-quick-enquiry {
+    margin-left: 20px;
+    background-color: #06861a;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-quick-enquiry:hover {
+    background-color: #ffc107;
+}
+
+/* Center and style single-line text */
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2rem; /* Default font size */
+    white-space: nowrap; /* Ensures text stays on one line */
+    width: 90%; /* Makes the caption take up 90% of the container's width */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 1.25rem; /* Smaller font size on tablets */
+        top: 55%; /* Adjust the position if needed */
+    }
+}
+
+/* Further adjust for very small screens */
+@media (max-width: 480px) {
+    .carousel-caption {
+        font-size: 1rem; /* Even smaller font size on mobile */
+        top: 50%; /* Adjust the position for smaller screens */
+    }
+}
+
+.carousel-inner img {
+    height: 700px; /* Adjust height if needed */
+    object-fit: cover;
+}
+
+/* Centering the heading and text */
+#heading-section {
+    text-align: center; /* Center everything inside the section */
+}
+
+/* Styling for the heading */
+#heading-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between heading and underline */
+}
+
+/* Styling for the separate underline */
+.underline {
+    width: 10%; /* You can adjust the width as needed */
+    height: 3px;
+    background-color: green; /* Green underline */
+    margin: 0 auto; /* Centers the underline */
+    margin-bottom: 20px; /* Adds space between underline and paragraph */
+}
+
+/* Styling for the paragraph text */
+#heading-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.explore-button {
+    font-size: 1rem;
+    padding: 10px 40px;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.explore-button:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Flex container for the split images */
+#split-images .image-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between the images */
+    gap: 20px; /* Adds space between image items */
+    flex-wrap: wrap;
+}
+
+/* Styling for each image item */
+.image-item {
+    position: relative;
+    width: 48%; /* Adjust width if needed */
+    margin-bottom: 20px; /* Adds space between rows */
+}
+
+/* Image styling */
+.image-item img {
+    width: 100%;
+    height: 100%; /* Ensure the image takes full height */
+    display: block;
+    object-fit: cover; /* Ensures image covers the container without stretching */
+}
+
+/* Text positioned at the bottom-center of the image */
+/* Text positioned at the bottom-center of the image */
+.image-text {
+    position: absolute;
+    bottom: 150px; /* Distance from the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    color: white; /* Text color */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%; /* Ensures text container spans the width of the image */
+    text-align: center; /* Centers the text horizontally */
+}
+
+.image-text-p {
+    position: absolute;
+    bottom: 100px; /* Distance from the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    color: white; /* Text color */
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%; /* Ensures text container spans the width of the image */
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* Responsive Adjustments for .image-text-p */
+@media (max-width: 768px) {
+    .image-text-p {
+        font-size: 0.9rem; /* Reduce font size on smaller screens */
+        bottom: 80px; /* Adjust positioning to maintain balance */
+    }
+}
+
+@media (max-width: 576px) {
+    .image-text-p {
+        font-size: 0.8rem; /* Further reduce font size for very small screens */
+        bottom: 60px; /* Adjust positioning */
+    }
+}
+
+/* Styling for the button inside each image item */
+.image-button {
+    position: absolute;
+    bottom: 30px; /* Distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+}
+
+.image-button:hover {
+    background-color: green;
+    color: white;
+}
+.image-button {
+    font-size: 1rem;
+    padding: 10px 40px;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.explore-button:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    /* Adjust carousel height for mobile */
+    .carousel-inner img {
+        height: 500px;
+    }
+
+    /* Adjust font size and padding for heading section */
+    #heading-section h2 {
+        font-size: 2rem;
+    }
+
+    #heading-section p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        font-size: 0.9rem;
+        padding: 8px 30px;
+    }
+
+    /* Stack the images vertically on small screens */
+    .image-item {
+        width: 100%;
+    }
+
+    .image-button {
+        font-size: 0.9rem;
+        padding: 8px 30px;
+    }
+}
+
+/* Small Screen Adjustments (for screens smaller than 576px) */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    /* Adjust font size for heading */
+    #heading-section h2 {
+        font-size: 1.8rem;
+    }
+
+    #heading-section p {
+        font-size: 0.9rem;
+    }
+
+    .explore-button {
+        font-size: 0.8rem;
+        padding: 6px 25px;
+    }
+
+    /* Stack the images vertically with reduced padding */
+    .image-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .image-text {
+        bottom: 120px;
+    }
+
+    .image-text-p {
+        bottom: 80px;
+    }
+
+    .image-button {
+        font-size: 0.8rem;
+        padding: 6px 25px;
+    }
+}
+#image-gallery .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the images */
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+}
+
+#image-gallery .image-item {
+    position: relative;
+    width: 350px; /* Set the width for each image item */
+    height: 550px; /* Set the height for portrait images */
+    overflow: hidden;
+    
+
+}
+
+#image-gallery .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+#image-gallery .image-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black shade with 30% opacity */
+    z-index: 1; /* Makes sure the overlay is above the image */
+}
+
+#image-gallery .image-text {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: 90%; /* Keeps the text inside the container */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; /* Makes sure the text is above the overlay */
+}
+
+
+#image-gallery .image-text h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#image-gallery .image-text p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #image-gallery .image-item {
+        width: 250px; /* Adjust width for smaller screens */
+        height: 350px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #image-gallery .image-item {
+        width: 100%; /* Stack the images vertically on very small screens */
+        height: 300px;
+    }
+
+    #image-gallery .image-container {
+        flex-direction: column;
+        gap: 10px; /* Less gap for stacked layout */
+    }
+}
+
+/* Ribbon Styles */
+.ribbon {
+    background-color: #4db35c; /* Green color for the ribbon */
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .ribbon-content {
+    display: flex;
+    justify-content: space-between; /* Evenly space the ribbon items */
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .ribbon-item {
+    
+    color: white; /* White text */
+    padding: 10px;
+    border-radius: 5px;
+    width: 22%; /* Adjust width to fit 4 items */
+    text-align: center;
+  }
+  
+  .ribbon-item h4 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .ribbon-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .ribbon-item {
+      width: 45%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ribbon-item {
+      width: 100%; /* Stack items vertically on very small screens */
+    }
+  }
+
+  /* Content section layout */
+/* Content section layout */
+.content-section {
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: flex;  /* Flexbox layout */
+    justify-content: space-between;  /* Distribute space between left and right sides */
+    align-items: center;  /* Vertically center the content */
+    gap: 20px;  /* Space between left and right sides */
+  }
+  
+  .left-side {
+    flex: 1;  /* Left side takes up 50% of the space */
+  }
+  
+  .image {
+    width: 100%;  /* Ensure the image takes full width of its container */
+    height: auto;  /* Maintain aspect ratio */
+    
+  }
+  
+  .right-side {
+    flex: 1;  /* Right side takes up 50% of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the content */
+    align-items: center;  /* Horizontally center the content */
+    text-align: center;  /* Ensure text is centered */
+    gap: 10px;  /* Space between heading, text, and button */
+  }
+  
+  .right-side h2 {
+    font-size: 2rem;  /* Heading font size */
+    font-weight: bold;
+    color: #333;  /* Heading color */
+  }
+  
+  .right-side p {
+    font-size: 1.1rem;  /* Text font size */
+    color: #555;  /* Text color */
+  }
+  
+  .action-button {
+    font-size: 1rem;
+    padding: 10px 40px;
+    border: 2px solid rgb(90, 236, 45);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(53, 245, 53);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #16e724;
+    color: white;  /* Hover effect (orange) */
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;  /* Stack content vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .left-side,
+    .right-side {
+      flex: none;
+      width: 100%;
+    }
+  
+    .image {
+      width: 80%;  /* Reduce image size on small screens */
+      margin-bottom: 20px;  /* Space between image and text */
+    }
+  
+    .right-side h2 {
+      font-size: 1.5rem;
+    }
+  
+    .right-side p {
+      font-size: 1rem;
+    }
+  }
+
+ /* Footer Styles */
+.footer {
+    background-color: #232e08; /* Dark background for footer */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between left, center, and right */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.stay-connected {
+    font-weight: bold; /* Make text bold */
+    font-size: 20px;
+    text-align: left; /* Align the "Stay Connected" text to the left */
+    margin-bottom: 10px; /* Add some space between the title and contact items */
+}
+.stay-connected1 {
+    font-weight: bold; /* Make text bold */
+    font-size: 20px;
+    text-align: center; /* Align the "Stay Connected" text to the left */
+    margin-bottom: 10px; /* Add some space between the title and contact items */
+}
+.footer-left {
+    flex: 1; /* Left side takes up 1/3 */
+    margin-right: 20px;
+}
+
+.footer-logo {
+    width: 150px; /* Adjust the logo size */
+    height: auto;
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.footer-center {
+    flex: 1; /* Center part takes up 1/3 */
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f4b400; /* Hover color */
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    color: #f4b400; /* Hover color */
+}
+
+.footer-right {
+    flex: 1; /* Right side takes up 1/3 */
+    text-align: left; /* Align text and items to the left */
+    padding-left: 20px; /* Optional padding for better spacing */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the items to the left */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.contact-item span {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .footer-right .stay-connected {
+        text-align: center; /* Center align for smaller screens */
+    }
+}
